@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0b1f3a; /* Dark Blue */
+  color: #ffffff;            /* White text for contrast */
+  font-family: 'Roboto', sans-serif;
+}
+
+.MuiPaper-root {
+  background-color: #1e2a47; /* Lighter dark blue for cards */
+  color: #ffffff;
+}
