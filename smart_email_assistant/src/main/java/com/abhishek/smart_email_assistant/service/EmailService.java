@@ -40,10 +40,11 @@ public class EmailService {
         String response = webClient.post()
                 .uri(geminiApiUrl+geminiApiKey)
                 .header("Content-Type","application/json")
+                .bodyValue(requestBody)
                 .retrieve()
                 .bodyToMono(String.class)
                 .block();
-
+        System.out.println("Gemini raw response:\n" + response);
         //return extract response because we will get in the form of content->part->text
         return extractResponse(response);
     }
