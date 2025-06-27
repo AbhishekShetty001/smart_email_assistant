@@ -52,8 +52,12 @@ public class EmailService {
         try {
             ObjectMapper mapper = new ObjectMapper();
             JsonNode node = mapper.readTree(response);
-            return node.path("candidates").
-                    get(0).path("contents").path("parts").get(0).path("text")
+            return node.path("candidates")
+                    .get(0)
+                    .path("content")
+                    .path("parts")
+                    .get(0)
+                    .path("text")
                     .asText();
         }catch (Exception e){
             return "error message"+e.getMessage();
