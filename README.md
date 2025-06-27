@@ -13,10 +13,10 @@ This project includes:
 # Folder Structure
 
 smart_email_assistant/
-├── backend/ # Spring Boot backend
-├── frontend/ # React frontend
-├── extension/ # Chrome extension
-└── README.md
+->backend/ # Spring Boot backend
+-> frontend/ # React frontend
+->extension/ # Chrome extension
+->README.md
 
 #### 📌 Run the Backend
 ```bash
